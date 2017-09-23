@@ -1,23 +1,19 @@
 
+javaString = 'Проверка 1'
+groovyString = "Ghjdthrf ${javaString} 2"
 
-def sss=["первый",2,'третий']
+println(javaString)
+println(groovyString)
 
-println(sss[1])
-println(sss[2])
+bigGroovyString = """
+  long
+   long
+    string
+""" // Длинная строка с отступами
 
-sss << "xtndthnsq"
-println(sss[3])
-println(sss[4])
+println(bigGroovyString)
 
-println("размер списка = " + sss.size())
-
-for (e in sss){
-    println(e)
-}
-
-def amPM = Calendar.getInstance().get(Calendar.AM_PM)
-if (amPM == Calendar.AM){
-    println("Good morning")
-} else {
-    println("Good evening")
-}
+def a = "a"
+println a
+println a + "12" // конкатенация
+println a * 3 // умножение
